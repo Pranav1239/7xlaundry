@@ -2,13 +2,15 @@ import Link from 'next/link'
 import React from 'react'
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import HeadphonesIcon from '@mui/icons-material/Headphones';
+import LogoMain from '../../../public/logo.png';
+import Image from 'next/image';
 const Header = () => {
   return (
     <div className='w-full py-6 shadow-lg bg-white'>
         <div className='m-auto max-w-[1350px]'>
             <div className='flex flex-row flex-wrap justify-center items-center'>
                 <div className='flex-[1]'>
-                    Logo
+                    <Image src={LogoMain} alt="Main Logo" width={125} height={35}/>
                 </div>
                 <div className='flex-[1]'>
                     <div className='flex flex-wrap flex-row justify-end gap-10'>
